@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		* { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
+		html, body, .row { height: 100%; margin: 0; }
+		a { color: unset; text-decoration: unset; }
+		.row { display: flex; flex-direction: column; }
+		.column {
+		    float: left;
+		    min-width: 20%;
+		    min-height: 20%;
+		    padding: 10px;
+		}
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		}
+		@media screen and (min-width: 900px) {
+			.row { flex-direction: row; }
+		}
+		</style>
+	</head>
+	<body>
+		<div class="row">
+			<a href="./text" class="column" style="background-color: #aaa;">
+				<h2>Text</h2>
+				<p>Perform real-time text analysis of your prospective Tweet before you post it. You might want to reconsider!</p>
+			</a>
+			<a href="./timeline" class="column" style="background-color: #bbb;">
+				<h2>Timeline</h2>
+				<p>Analyze the timeline of a Twitter user and get a breakdown of their posting habits!</p>
+			</a>
+			<a href="./country" class="column" style="background-color: #ccc;">
+				<h2>Country</h2>
+				<p>Analyze the Tweeting habits of peoples of different countries, with topic modeling!</p>
+			</a>
+			<a href="./geo" class="column" style="background-color: #ddd;">
+				<h2>Geo</h2>
+				<p>Interactive choropleth map of NYC neighborhoods by percentage of Tweets that are private. The map isn't all of NYC due to the limitations of the data, but it is a great sampler of what can be accomplished using my model in conjunction with cutting-edge R packages!</p>
+			</a>
+			<a href="./rate" class="column" style="background-color: #eee;">
+				<h2>Rate</h2>
+				<p>Contribute to the improvement of the model!</p>
+			</a>
+		</div>
+	</body>
+</html>
